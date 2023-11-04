@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="menu">
+    <ul>
+      <li><a href="#" id="dashboard-link" class="active">Dashboard</a></li>
+      <li><a href="#" id="atendentes-link">Atendentes</a></li>
+      <li><a href="#" id="agrupamentos-link">Agrupamentos</a></li>
+      <li><a href="#" id="whatsapp-link">Conectar WhatsApp</a></li>
+      <li><a href="#" id="atendimentos-link">Atendimentos</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <h1 class="page-title">Adicione Atendentes</h1>
+
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+      <div class="form-group">
+        <label for="nome-exibicao">Nome de Exibição:</label>
+        <input type="text" id="nome-exibicao" name="nome-exibicao">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <h2 class="page-title">Atendentes</h2>
+
+    <ul class="atendentes-list">
+      <li class="atendente-item">Atendente 1</li>
+      <li class="atendente-item">Atendente 2</li>
+      <li class="atendente-item">Atendente 3</li>
+    </ul>
+  </div>
+
+  <script>
+    // Captura os elementos dos links do menu
+    const dashboardLink = document.getElementById('dashboard-link');
+    const atendentesLink = document.getElementById('atendentes-link');
+    const agrupamentosLink = document.getElementById('agrupamentos-link');
+    const whatsappLink = document.getElementById('whatsapp-link');
+    const atendimentosLink = document.getElementById('atendimentos-link');
+
+    // Adiciona um evento de clique para cada link
+    dashboardLink.addEventListener('click', setActiveLink);
+    atendentesLink 
